@@ -1,0 +1,30 @@
+{
+	"name": "Shailesh_DS_Parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorageLS",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"TablesName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@concat(dataset().TablesName,'.parquet')",
+					"type": "Expression"
+				},
+				"folderPath": "WITHOUT_SCHEMAS",
+				"fileSystem": "shailesh"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

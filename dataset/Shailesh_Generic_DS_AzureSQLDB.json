@@ -1,0 +1,13 @@
+{
+	"name": "Shailesh_Generic_DS_AzureSQLDB",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Shailesh_Azure_sql_db_copy",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
