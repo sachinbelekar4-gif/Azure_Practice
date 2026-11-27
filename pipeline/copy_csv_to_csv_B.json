@@ -5,6 +5,7 @@
 		"activities": [
 			{
 				"name": "Copy_Csv_Data",
+				"description": "Copy Date from csv",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
